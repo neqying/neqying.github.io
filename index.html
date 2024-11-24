@@ -163,6 +163,146 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/11/23/Javascript%EF%BC%88%E4%B8%80%EF%BC%89/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/ava.jpg">
+      <meta itemprop="name" content="Davi">
+      <meta itemprop="description" content="TLE">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Davi">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/11/23/Javascript%EF%BC%88%E4%B8%80%EF%BC%89/" class="post-title-link" itemprop="url">Javascript（一）</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2024-11-23 13:29:11" itemprop="dateCreated datePublished" datetime="2024-11-23T13:29:11+08:00">2024-11-23</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2024-11-24 00:27:08" itemprop="dateModified" datetime="2024-11-24T00:27:08+08:00">2024-11-24</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="Javascript语法思考题"><a href="#Javascript语法思考题" class="headerlink" title="Javascript语法思考题"></a>Javascript语法思考题</h2><ol>
+<li>const真的是修饰常量吗</li>
+<li>for加强是用of吗</li>
+<li>数组push pop shift unshift</li>
+<li>字符串单引号和双引号一样吗</li>
+<li>模板字符串输出区别拼接字符串</li>
+<li>为什么有时候可以不加分号</li>
+<li>正则表达式</li>
+<li>查看数据类型</li>
+<li>基本数据类型</li>
+<li>写一个对象（this）</li>
+<li>怎么注释</li>
+<li>具体，匿名，箭头（很重要）</li>
+<li>变量提升var声明（不提升赋值）但不建议使用</li>
+<li>闭包：内部函数可以访问外部函数的变量（内存泄漏）</li>
+<li>模板字符串里面注意是反引号</li>
+<li>对象属性的增删改查</li>
+<li>array.map和fillter</li>
+<li>回调是什么？异步是什么（跳过）</li>
+<li>怎么import和export</li>
+<li>gc：引用计数算法（淘汰）和标记清除算法</li>
+</ol>
+<h2 id="javascript进阶"><a href="#javascript进阶" class="headerlink" title="javascript进阶"></a>javascript进阶</h2><ol>
+<li>var变量提升（声明？赋值？）</li>
+<li>动态参数内置arguments（伪数组）或…剩余参数数组名（真数组）（推荐）</li>
+<li>数组展开运算符…a可用于求最值和合并数组</li>
+<li>箭头函数不包含this，用于替代匿名函数</li>
+<li>箭头函数单参数可省略括号，一行代码（包括return）可以省略大括号 </li>
+<li>箭头函数无arguments，但有…</li>
+<li>箭头指向外两层，最外是window对象</li>
+<li>对象和数组的结构其实就是同名变量赋值</li>
+</ol>
+<h2 id="javascript的api交互"><a href="#javascript的api交互" class="headerlink" title="javascript的api交互"></a>javascript的api交互</h2><h3 id="dom"><a href="#dom" class="headerlink" title="dom"></a>dom</h3><p>文档对象模型 (DOM) ，文档被视为一个树形结构，树中的每个节点都代表文档中的一个部分，比如元素、属性和文本内容。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> p=<span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&#x27;myP&#x27;</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(p);</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">dir</span>(p);</span><br><span class="line">p.<span class="property">innerText</span>=<span class="string">&#x27;angel come back&#x27;</span>;</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>事件类型</th>
+<th>触发条件</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>onclick</td>
+<td>鼠标左键点击时触发</td>
+</tr>
+<tr>
+<td>onmouseover</td>
+<td>鼠标指针移入元素时触发</td>
+</tr>
+<tr>
+<td>onmouseout</td>
+<td>鼠标指针移出元素时触发</td>
+</tr>
+<tr>
+<td>onmousedown</td>
+<td>鼠标按下时触发</td>
+</tr>
+<tr>
+<td>onmouseup</td>
+<td>鼠标释放时触发</td>
+</tr>
+<tr>
+<td>onmousemove</td>
+<td>鼠标在元素上移动时触发</td>
+</tr>
+<tr>
+<td>oncontextmenu</td>
+<td>右键点击时触发</td>
+</tr>
+</tbody></table>
+<p>一些残余的问题：</p>
+<ol>
+<li>如何获取系统的时间精确到秒</li>
+<li>innnerHTML和innerElement区别</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2024/11/04/idea%E6%93%8D%E4%BD%9C/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -572,10 +712,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2024-10-22 19:08:57 / 修改时间：22:27:24" itemprop="dateCreated datePublished" datetime="2024-10-22T19:08:57+08:00">2024-10-22</time>
+              <time title="创建时间：2024-10-22 19:08:57" itemprop="dateCreated datePublished" datetime="2024-10-22T19:08:57+08:00">2024-10-22</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2024-11-12 23:52:40" itemprop="dateModified" datetime="2024-11-12T23:52:40+08:00">2024-11-12</time>
+              </span>
 
           
 
@@ -602,6 +748,11 @@
 <h2 id="理解"><a href="#理解" class="headerlink" title="理解"></a>理解</h2><p>如果我们未来的生活有很大一部分是生活在全球的、虚拟的、相互联系的世界（元宇宙），那么NFT将会是那个世界的主要构建模块。想象一下，如果你的虚拟世界里，你的整个身份都仍然受制于一个大的科技巨头，被它牢牢操控着，你会开心么？（电影失控玩家已经描述过这种窘境）如果你曾经更换过社交媒体平台，你会发现在被巨头垄断的一个个信息孤岛里，信息和内容是不兼容、不可移植的，你不拥有你个人的信息，你都不能迁移它们。因此你不得不从零开始重新建立你在新的社交平台的人脉和声誉，此时你应该心里叫苦不迭。又或者如果你曾经在游戏中购买过的虚拟物品，而游戏公司因运营不善而关服，你曾经真金白银投入购买的所有资产都会从这个世界上凭空消失，根本无法挪走或保存，只是因为这个游戏公司的经营不善？！但所有这些为什么要我们来买单，我们可是投入了真金白银啊？NFT可以、应该、且必将超越这些桎梏，带我们去到更广阔的、连通在一起的天地！</p>
 <h2 id="记账"><a href="#记账" class="headerlink" title="记账"></a>记账</h2><p>所有的抄袭行为会因为区块链的技术而被分布式记账，永久钉在耻辱柱上</p>
 <p>界定什么才是真正的元宇宙，即——是否用区块链技术搭建经济体系。</p>
+<h2 id="币圈"><a href="#币圈" class="headerlink" title="币圈"></a>币圈</h2><h3 id="现货"><a href="#现货" class="headerlink" title="现货"></a>现货</h3><h3 id="合约"><a href="#合约" class="headerlink" title="合约"></a>合约</h3><p><code>永续</code> <code>交割</code></p>
+<p>全仓 逐仓</p>
+<p>买空 买多 平仓 止盈止损</p>
+<p>只减仓 市场委托价格卖出 </p>
+<p>限价交易</p>
 
       
     </div>
@@ -846,91 +997,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/30/Python-add/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/ava.jpg">
-      <meta itemprop="name" content="Davi">
-      <meta itemprop="description" content="TLE">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Davi">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/09/30/Python-add/" class="post-title-link" itemprop="url">Python_add</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2024-09-30 13:37:42" itemprop="dateCreated datePublished" datetime="2024-09-30T13:37:42+08:00">2024-09-30</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2024-10-02 13:01:14" itemprop="dateModified" datetime="2024-10-02T13:01:14+08:00">2024-10-02</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Python/" itemprop="url" rel="index"><span itemprop="name">Python</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="Python-的动态类型"><a href="#Python-的动态类型" class="headerlink" title="Python 的动态类型"></a><strong>Python 的动态类型</strong></h2><ul>
-<li><strong>列表 (list):</strong> 存储任意类型的数据，长度可以动态变化</li>
-<li><strong>元组 (tuple):</strong> 不可变列表，一旦创建，就不能修改其中的元素，存储固定的一组数据。</li>
-<li><strong>字典 (dictionary):</strong> 无序的键值对集合，使用哈希表实现，查找速度非常快，键可以是任意不可变类型。</li>
-<li><strong>集合 (set):</strong> 无序、不重复元素集合。用于快速判断元素是否在集合中，以及进行集合运算（交集、并集、差集等）
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2024/09/30/Python-add/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1002,7 +1068,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">14</span>
+          <span class="site-state-item-count">15</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
