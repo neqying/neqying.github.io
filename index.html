@@ -163,6 +163,103 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/11/26/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/ava.jpg">
+      <meta itemprop="name" content="Davi">
+      <meta itemprop="description" content="TLE">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Davi">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/11/26/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" class="post-title-link" itemprop="url">正则表达式</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2024-11-26 18:53:17 / 修改时间：19:25:06" itemprop="dateCreated datePublished" datetime="2024-11-26T18:53:17+08:00">2024-11-26</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="正则表达式基本符号分类"><a href="#正则表达式基本符号分类" class="headerlink" title="正则表达式基本符号分类"></a>正则表达式基本符号分类</h3><p><strong>字符类型</strong></p>
+<ul>
+<li><code>\d</code> : 匹配数字 (0-9)</li>
+<li><code>\D</code> : 匹配非数字</li>
+<li><code>\w</code> : 匹配字母、数字或下划线</li>
+<li><code>\W</code> : 匹配非字母、数字或下划线</li>
+<li><code>\s</code> : 匹配空白字符 (空格、制表符等)</li>
+<li><code>\S</code> : 匹配非空白字符</li>
+<li><code>.</code> : 匹配任意字符 (除换行符)</li>
+</ul>
+<p><strong>位置类型</strong></p>
+<ul>
+<li><code>\b</code> : 匹配单词边界</li>
+<li><code>\B</code> : 匹配非单词边界</li>
+<li><code>^</code> : 匹配字符串的开头</li>
+<li><code>$</code> : 匹配字符串的结尾</li>
+</ul>
+<p><strong>数量限定符</strong></p>
+<ul>
+<li><code>+</code> : 匹配前一个字符一次或多次</li>
+<li><code>*</code> : 匹配前一个字符零次或多次</li>
+<li><code>?</code> : 匹配前一个字符零次或一次</li>
+<li><code>&#123;n,m&#125;</code> : 匹配前一个字符至少 <code>n</code> 次，至多 <code>m</code> 次</li>
+<li><code>&#123;n,&#125;</code> : 匹配前一个字符至少 <code>n</code> 次</li>
+<li><code>&#123;n&#125;</code> : 匹配前一个字符 <code>n</code> 次</li>
+</ul>
+<p><strong>修饰符</strong></p>
+<ul>
+<li><code>i</code> : 忽略大小写</li>
+<li><code>g</code> : 全局匹配</li>
+<li><code>m</code> : 多行模式</li>
+</ul>
+<h3 id="字符类型例"><a href="#字符类型例" class="headerlink" title="字符类型例"></a>字符类型例</h3><p>正则：<code>\d+</code><br>匹配文本：<code>abc123def456</code><br>答案：<code>123</code>, <code>456</code></p>
+<p>正则：<code>\D+</code><br>匹配文本：<code>123abc456def</code><br>答案：<code>abc</code>, <code>def</code></p>
+<p>正则：<code>\w+</code><br>匹配文本：<code>hello_world! 123</code><br>答案：<code>hello_world</code>, <code>123</code></p>
+<p>正则：<code>\W+</code><br>匹配文本：<code>abc@#def$%ghi</code><br>答案：<code>@#</code>, <code>$%</code></p>
+<p>正则：<code>\s+</code><br>匹配文本：<code>hello world</code><br>答案：<code> </code>(3个空格)</p>
+<p>正则：<code>\S+</code><br>匹配文本：<code>a b c</code><br>答案：<code>a</code>, <code>b</code>, <code>c</code></p>
+<p>正则：<code>.</code><br>匹配文本：<code>a1!b2@c3#</code><br>答案：<code>a</code>, <code>1</code>, <code>!</code>, <code>b</code>, <code>2</code>, <code>@</code>, <code>c</code>, <code>3</code>, <code>#</code></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2024/11/23/Javascript%EF%BC%88%E4%B8%80%EF%BC%89/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -194,7 +291,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2024-11-24 00:27:08" itemprop="dateModified" datetime="2024-11-24T00:27:08+08:00">2024-11-24</time>
+                <time title="修改时间：2024-11-25 00:28:38" itemprop="dateModified" datetime="2024-11-25T00:28:38+08:00">2024-11-25</time>
               </span>
 
           
@@ -279,10 +376,18 @@
 <td>右键点击时触发</td>
 </tr>
 </tbody></table>
+<p>网页加载顺序</p>
+<p><strong>DOM解析</strong> → <strong>CSS加载和解析</strong> → <strong>JavaScript加载和执行</strong> →</p>
+<p> <strong>DOMContentLoaded触发</strong> → <strong>资源加载</strong> → <strong>load事件触发</strong></p>
 <p>一些残余的问题：</p>
 <ol>
 <li>如何获取系统的时间精确到秒</li>
 <li>innnerHTML和innerElement区别</li>
+</ol>
+<p>案例教学</p>
+<ol>
+<li><p>验证码交互</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">   </span><br></pre></td></tr></table></figure></li>
 </ol>
 
       
@@ -923,80 +1028,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/10/04/Cellphone-use/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/ava.jpg">
-      <meta itemprop="name" content="Davi">
-      <meta itemprop="description" content="TLE">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Davi">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/10/04/Cellphone-use/" class="post-title-link" itemprop="url">Cellphone-use</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2024-10-04 23:07:40" itemprop="dateCreated datePublished" datetime="2024-10-04T23:07:40+08:00">2024-10-04</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2024-10-16 20:37:08" itemprop="dateModified" datetime="2024-10-16T20:37:08+08:00">2024-10-16</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>你会觉得时间“偷走”了，是因为这些行为并没有带来深层次的满足或成长，更多是即时快感的追求。但这种快感是暂时的，结束后会感到空虚和迷茫，觉得一天没有实质收获。</p>
-<p>这不是你的错，很多手机应用和平台都在利用心理机制抓住我们的注意力，刻意设计成这种“无意识沉浸”的模式。</p>
-<p><strong>即时奖励</strong>和<strong>多巴胺释放</strong>背后的机制，其实是我们大脑自然形成的一种适应环境的方式。大脑喜欢奖励机制，因为它能帮助我们快速区分哪些行为对生存或幸福有好处。但在现代社会，这种机制有时候会被过度刺激，尤其是在像手机、游戏和社交媒体等数字产品的使用上。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2024/10/04/Cellphone-use/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1068,7 +1099,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">15</span>
+          <span class="site-state-item-count">16</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
